@@ -1,17 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SearchBox from './home/search_image';
-import Account from './home/Account';
+import SearchPage from './pages/SearchPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/style.css';
-
+import './css/index.css';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<SearchBox />} />
-        <Route path="/profile/:id" element={<Account />} />
+        <Route path="/" element={<SearchPage />} />
       </Routes>
     </Router>
   );
